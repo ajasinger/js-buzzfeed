@@ -255,7 +255,7 @@ const showAnswer= () => {
 
     answerDisplay.append(answerBlock);
 
-    //disable multiple answer blocks
+    //disable multiple answer
     const allAnswerBlocks = document.querySelectorAll('.answer-block');
     //can't remove event listener to this is workaround
     Array.from(allAnswerBlocks).foreEach(answerBlock => answerBlock.replaceWith(answerBlock.cloneNode(true)));
@@ -268,7 +268,7 @@ const disableQuestionBlock = (questionId, chosenAnswer) => {
     //if title in text doesn't equal chosen answer than add opacity
     Array.from(currentQuestionBlock.children).forEach(block => {
         if (block.children.item(1).innerText != chosenAnswer) {
-            block.style.opacity = 50;
+            block.style.opacity = "50%";
         }
     })
 
