@@ -96,7 +96,7 @@ const questions = [
 ]
 
 //Array of all possible answers
-const Answers = [
+const answers = [
     {
         combination: ["New York", "Pizza", "Traditional"],
         text: "Blue Cheese",
@@ -221,6 +221,23 @@ const handleClick = (questionId, chosenAnswer) => {
 //create answer block to display answer
 
 const showAnswer= () => {
+    let result;
+    answers.forEach(answer => {
+        if (
+            chosenAnswers.includes(answer.combination[0]) +
+            chosenAnswers.includes(answer.combination[1]) +
+            chosenAnswers.includes(answer.combination[2])
+            ) {
+                //answer is object
+                result = answer;
+            } else {
+                //first answer object is defualt
+                result = answers[0];
+            }
+    })
+
+    console.log(result);
+
     const answerBlock = document.createElement('div');
     answerBlock.classList.add('result-block');
 
