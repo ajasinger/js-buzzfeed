@@ -230,7 +230,7 @@ const showAnswer= () => {
             ) {
                 //answer is object
                 result = answer;
-            } else {
+            } else if (!result) {
                 //first answer object is defualt
                 result = answers[0];
             }
@@ -253,4 +253,9 @@ const showAnswer= () => {
     answerBlock.append(answerTitle, answerImage);
 
     answerDisplay.append(answerBlock);
+
+    //disable multiple answer blocks
+    const allAnswerBlocks = document.querySelectorAll('.answer-block');
+    //can't remove event listener to this is workaround
+    Array.from(allAnswerBlocks).foreEach(answerBlock => answerBlock.replaceWith(answerBlock.cloneNode(true)));
 }
