@@ -125,9 +125,12 @@ const populateQuestions = () => {
             answerImage.setAttribute('src', answer.image);
             answerImage.setAttribute('alt', answer.alt);
 
-            
+            //Add title to images 
+            const answerTitle = document.createElement('h3');
+            answerTitle.innerHTML = answer.text;
 
-            answerBlock.append(answerImage)
+            //Add image then title
+            answerBlock.append(answerImage, answerTitle)
         })
 
         questionDisplay.append(answersBlock);
