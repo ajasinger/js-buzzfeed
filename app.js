@@ -97,9 +97,17 @@ const questions = [
 
 const populateQuestions = () => {
     questions.forEach(question => {
+
+        //Add question block 
         const titleBlock = document.createElement('div');
         titleBlock.id = question.id;
         titleBlock.classList.add('title-block');
+
+        //Add header
+        const titleHeading = document.createElement('h2');
+        titleHeading.innerHTML = question.text;
+        titleBlock.append(titleHeading)
+
 
         questionDisplay.append(titleBlock);
     })
