@@ -185,6 +185,13 @@ const handleClick = (questionId, chosenAnswer) => {
     // when unansweredQuestions array is empty, show answer
     if (!unansweredQuestions.length) {
         // scroll to answer div
-        //showAnswer()
+        showAnswer()
     }
+}
+
+//create answer block to display answer
+
+const showAnswer= () => {
+    const answerBlock = document.createElement('div');
+    answerBlock.classList.add('result-block');
 }
