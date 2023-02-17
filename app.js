@@ -105,4 +105,4 @@ const populateQuestions = () => {
     })
 }
 
-populateQuestions;
+populateQuestions();
