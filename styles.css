@@ -40,3 +40,10 @@ p {
     align-content: center;
     color: rgb(255, 255, 255)
 }
+
+.answer-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 16px 0 23px 0;
+}
