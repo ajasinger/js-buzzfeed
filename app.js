@@ -8,27 +8,27 @@ const questions = [
         answers: [
             {
                 text: "New York",
-                image: "https://unsplash.com/photos/SQxcZIIZHV8",
-                alt: "Photo of the Empire State Building",
-                credit: "Wilmer Martinez"
+                image: "https://images.unsplash.com/photo-1534430480872-3498386e7856?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
+                alt: "Photo of the Empire State building during daytime",
+                credit: "Oliver Niblett"
             },
             {
                 text: "Austin",
-                image: "https://unsplash.com/photos/zjrAEvnynm8",
-                alt: "Photo of people paddle boarding with a backdrop of the city of Austin",
-                credit: "Tomek Baginski"
+                image: "https://images.unsplash.com/photo-1531218150217-54595bc2b934?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
+                alt:"Time-lapse photography car lights on bridge",
+                credit: "Carlos Alfonso"
             },
             {
                 text: "Portland",
-                image: "https://unsplash.com/photos/4A56VJzKh2c",
-                alt: "Photo of a movie theatre with a sign that says Portland",
-                credit: "Peter Bucks"
+                image: "https://images.unsplash.com/photo-1534430480872-3498386e7856?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
+                alt:"High-rise buildings",
+                credit: "Elena Kuchko"
             },
             {
                 text: "New Orleans",
-                image: "https://unsplash.com/photos/nUkxLPE5Fto",
-                alt: "Photo of an old building with a balcony and trees",
-                credit: "Rosie Kerr"
+                image: "https://images.unsplash.com/photo-1549965738-e1aaf1168943?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
+                alt:"Road with people and house",
+                credit: "João Francisco"
             }
         ]
     },
@@ -38,27 +38,27 @@ const questions = [
         answers:[
             {
                 text: "Pizza",
-                image: "https://unsplash.com/photos/60nzTP7_hMQ",
-                alt: "Photo of pizza with arugala and cheese",
-                credit: "Saundarya Srinivasan"
+                image: "https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
+                alt:"Pepperoni Pizza",
+                credit: "Alan Hardman"
             },
             {
                 text: "Sandwich",
-                image: "https://unsplash.com/photos/mAQZ3X_8_l0",
-                alt: "Photo of a sandwich with tomato and cheese",
-                credit: "Eiliv Aceron"
+                image: "https://images.unsplash.com/photo-1481070414801-51fd732d7184?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
+                alt:"ham sandwich on white surface",
+                credit: "Eaters Collective"
             },
             {
                 text: "Pasta",
-                image: "https://unsplash.com/photos/flFd8L7_B3g",
-                alt: "Photo of a bowl of pasta with tomato sauce",
-                credit: "Ben Lei"
+                image: "https://images.unsplash.com/photo-1516100882582-96c3a05fe590?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
+                alt:"Pasta in tomato sauce",
+                credit: "Mgg Vitchakorn"
             },
             {
                 text: "Hamburger",
-                image: "https://unsplash.com/photos/DHxLfzqhoIk",
-                alt: "Photo of a hamburger and fries",
-                credit: "Emanuel Ekstrom"
+                image: "https://images.unsplash.com/photo-1551782450-a2132b4ba21d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
+                alt:"hamburger",
+                credit: "sk"
             }
         ]
     },
@@ -68,25 +68,25 @@ const questions = [
         answers:[
             {
                 text: "Traditional",
-                image: "https://unsplash.com/photos/L7EwHkq1B2s",
-                alt: "Photo of house interior",
-                credit: "Kara Eads"
+                image: "https://images.unsplash.com/photo-1555040479-c949debe66c1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
+                alt:"focus photography of building windows",
+                credit: "Burgess Milner"
             },
             {
                 text: "Modern",
-                image: "https://unsplash.com/photos/rOk4VSMS3Ck",
-                alt: "Photo of a modern home interior",
-                credit: "R Architecture"
+                image: "https://images.unsplash.com/photo-1460317442991-0ec209397118?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
+                alt:"low angle view of building",
+                credit: "Brandon Giggs"
             },
             {
                 text: "House",
-                image: "https://unsplash.com/photos/1ddol8rgUH8",
-                alt: "Photo of a house with a fence",
-                credit: "Scott Webb"
+                image: "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
+                alt:"trees beside white house",
+                credit: "Phil Hearing"
             },
             {
                 text: "Mountains",
-                image: "https://unsplash.com/photos/cQxwarmp4ag",
+                image: "./src/images/alex-hawthorne-cQxwarmp4ag-unsplash.jpg",
                 alt: "Photo of a cabin on a snowy lake",
                 credit: "Alex Hawthorne"
             }
@@ -100,25 +100,25 @@ const answers = [
     {
         combination: ["New York", "Pizza", "Traditional"],
         text: "Blue Cheese",
-        image: "ADD LINK",
+        image: "https://images.unsplash.com/photo-1452195100486-9cc805987862?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&w=400&h=400&fit=fillmax",
         alt: "Blue Cheese"
     },
     {
         combination: ["Austin", "Pasta", "Modern"],
         text: "Cheddar",
-        image: "ADD LINK",
+        image: "https://images.unsplash.com/photo-1618164435735-413d3b066c9a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
         alt: "Cheddar Cheese"
     },
     {
         combination: ["Portland", "Sandwich", "Mountains"],
         text: "Feta",
-        image: "ADD LINK",
+        image: "https://images.unsplash.com/photo-1626957341926-98752fc2ba90?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
         alt: "Feta Cheese"
     },
     {
         combination: ["New Orleans", "Hamburger", "House"],
         text: "Halloumi",
-        image: "ADD LINK",
+        image: "https://images.unsplash.com/photo-1505281036624-fac2862357b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80",
         alt: "Halloumi Cheese"
     }
 ];
