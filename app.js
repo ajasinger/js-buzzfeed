@@ -118,9 +118,25 @@ const populateQuestions = () => {
         question.answers.forEach(answer => {
             const answerBlock = document.createElement('div');
             answerBlock.classList.add('answer-block');
+            answerBlock.addEventListener('click', handleClick);
+
+            //Add image
+            const answerImage = document.createElement('img');
+            answerImage.setAttribute('src', answer.image);
+            answerImage.setAttribute('alt', answer.alt);
+
+            
+
+            answerBlock.append(answerImage)
         })
+
+        questionDisplay.append(answersBlock);
 
     })
 }
 
 populateQuestions();
+
+const handleClick = () => {
+    console.log('click');
+}
