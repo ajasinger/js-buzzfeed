@@ -118,7 +118,7 @@ const populateQuestions = () => {
         question.answers.forEach(answer => {
             const answerBlock = document.createElement('div');
             answerBlock.classList.add('answer-block');
-            answerBlock.addEventListener('click', handleClick);
+            answerBlock.addEventListener('click', () => handleClick);
 
             //Add image
             const answerImage = document.createElement('img');
@@ -133,12 +133,13 @@ const populateQuestions = () => {
             const answerInfo = document.createElement('p');
             const imageLink = document.createElement('a');
             imageLink.setAttribute('href', answer.credit);
+            imageLink.textContent = answer.credit
 
             //Add clickable image link 
             const sourceLink = document.createElement('a');
             sourceLink.textContent = 'Unsplash';
             sourceLink.setAttribute('src', 'https://unsplash.com');
-            answerInfo.append(imageLink, 'to', sourceLink);
+            answerInfo.append(imageLink, ' to ', sourceLink);
 
             //Add image then title
             answerBlock.append(answerImage, answerTitle, answerInfo)

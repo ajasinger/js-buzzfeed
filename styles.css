@@ -57,3 +57,16 @@ p {
     margin-bottom: 16px;
     overflow: hidden;
 }
+
+.answer-block img {
+    width: 100%;
+}
+
+.answer-block p {
+    font-size: 11px;
+    font-style: italic;
+}
+
+.answer-block a {
+    color: rgb(137, 137, 136);
+}
