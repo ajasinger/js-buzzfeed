@@ -73,4 +73,9 @@ p {
     width: 600px;
     background-color: rgb(255, 61, 158);
     border-radius: 5px;
+    border: solid rgb(255,61,158) 20px;
+}
+
+.result-block img {
+    width: 100%;
 }
