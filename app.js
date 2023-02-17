@@ -175,4 +175,16 @@ const handleClick = (questionId, chosenAnswer) => {
 
     console.log(chosenAnswers);
     console.log(unansweredQuestions);
+
+    //disableQuestionBlock(questionId, chosenAnswer)
+   
+    //scroll to first unanswered question byt destructuring array
+    const lowestquestionId = Math.min(...unansweredQuestions);
+    location.href = '#' + lowestquestionId;
+
+    // when unansweredQuestions array is empty, show answer
+    if (!unansweredQuestions.length) {
+        // scroll to answer div
+        //showAnswer()
+    }
 }
