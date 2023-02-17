@@ -47,3 +47,13 @@ p {
     justify-content: space-between;
     margin: 16px 0 23px 0;
 }
+
+.answer-block {
+    width: 286px;
+    height: 286px;
+    border-radius: 5px;
+    box-shadow: rgba(0,0,0,0.07) 0 0 0 1px;
+    text-align: center;
+    margin-bottom: 16px;
+    overflow: hidden;
+}
