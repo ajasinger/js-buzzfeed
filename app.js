@@ -110,9 +110,15 @@ const populateQuestions = () => {
         questionDisplay.append(titleBlock);
 
         //Add answers
-        const questionsBlock = document.createElement('div');
-        questionsBlock.id = question.id + "-questions";
-        questionsBlock.classList.add('answer-options');
+        const answersBlock = document.createElement('div');
+        answersBlock.id = question.id + "-questions";
+        answersBlock.classList.add('answer-options');
+
+        //Add individual answers
+        question.answers.forEach(answer => {
+            const answerBlock = document.createElement('div');
+            answerBlock.classList.add('answer-block');
+        })
 
     })
 }
