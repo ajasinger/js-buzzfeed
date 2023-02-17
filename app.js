@@ -86,7 +86,7 @@ const questions = [
             },
             {
                 text: "Mountains",
-                image: "./src/images/alex-hawthorne-cQxwarmp4ag-unsplash.jpg",
+                image: "https://images.unsplash.com/photo-1506974210756-8e1b8985d348?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
                 alt: "Photo of a cabin on a snowy lake",
                 credit: "Alex Hawthorne"
             }
