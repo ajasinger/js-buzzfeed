@@ -129,8 +129,19 @@ const populateQuestions = () => {
             const answerTitle = document.createElement('h3');
             answerTitle.innerHTML = answer.text;
 
+            //Add image info
+            const answerInfo = document.createElement('p');
+            const imageLink = document.createElement('a');
+            imageLink.setAttribute('href', answer.credit);
+
+            //Add clickable image link 
+            const sourceLink = document.createElement('a');
+            sourceLink.textContent = 'Unsplash';
+            sourceLink.setAttribute('src', 'https://unsplash.com');
+            answerInfo.append(imageLink, 'to', sourceLink);
+
             //Add image then title
-            answerBlock.append(answerImage, answerTitle)
+            answerBlock.append(answerImage, answerTitle, answerInfo)
         })
 
         questionDisplay.append(answersBlock);
