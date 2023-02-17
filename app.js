@@ -246,5 +246,11 @@ const showAnswer= () => {
     answerTitle.innerHTML = result.text;
     //create image
     const answerImage = document.createElement('img');
-    answerImage.setAttribute()
+    //show answer image
+    answerImage.setAttribute('src', result.image);
+    answerImage.setAttribute('alt', result.alt);
+
+    answerBlock.append(answerTitle, answerImage);
+
+    answerDisplay.append(answerBlock);
 }
