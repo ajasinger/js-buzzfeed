@@ -167,7 +167,7 @@ const populateQuestions = () => {
             //Add image info
             const answerInfo = document.createElement('p');
             const imageLink = document.createElement('a');
-            imageLink.setAttribute('href', answer.credit);
+            imageLink.setAttribute('href', answer.image);
             imageLink.innerHTML = answer.credit;
 
             //Add clickable image link 
@@ -214,7 +214,8 @@ const handleClick = (questionId, chosenAnswer) => {
     // when unansweredQuestions array is empty, show answer
     if (!unansweredQuestions.length) {
         // scroll to answer div
-        showAnswer()
+        location.href = '#answer';
+        showAnswer();
     }
 }
 
@@ -258,4 +259,17 @@ const showAnswer= () => {
     const allAnswerBlocks = document.querySelectorAll('.answer-block');
     //can't remove event listener to this is workaround
     Array.from(allAnswerBlocks).foreEach(answerBlock => answerBlock.replaceWith(answerBlock.cloneNode(true)));
+}
+
+const disableQuestionBlock = (questionId, chosenAnswer) => {
+    const currentQuestionBlock = document.getElementById(questionId + "-questions")
+    
+    //make array from question block, for each
+    //if title in text doesn't equal chosen answer than add opacity
+    Array.from(currentQuestionBlock.children).forEach(block => {
+        if (block.children.item(1).innerText != chosenAnswer) {
+            block.style.opacity = 50;
+        }
+    })
+
 }
