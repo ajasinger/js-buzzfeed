@@ -133,11 +133,11 @@ const populateQuestions = () => {
             const answerInfo = document.createElement('p');
             const imageLink = document.createElement('a');
             imageLink.setAttribute('href', answer.credit);
-            imageLink.textContent = answer.credit
+            imageLink.innerHTML = answer.credit;
 
             //Add clickable image link 
             const sourceLink = document.createElement('a');
-            sourceLink.textContent = 'Unsplash';
+            sourceLink.innerHTML = 'Unsplash';
             sourceLink.setAttribute('src', 'https://unsplash.com');
             answerInfo.append(imageLink, ' to ', sourceLink);
 
