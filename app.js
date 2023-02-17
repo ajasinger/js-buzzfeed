@@ -95,6 +95,35 @@ const questions = [
     
 ]
 
+//Array of all possible answers
+const Answers = [
+    {
+        combination: ["New York", "Pizza", "Traditional"],
+        text: "Blue Cheese",
+        image: "ADD LINK",
+        alt: "Blue Cheese"
+    },
+    {
+        combination: ["Austin", "Pasta", "Modern"],
+        text: "Cheddar",
+        image: "ADD LINK",
+        alt: "Cheddar Cheese"
+    },
+    {
+        combination: ["Portland", "Sandwich", "Mountains"],
+        text: "Feta",
+        image: "ADD LINK",
+        alt: "Feta Cheese"
+    },
+    {
+        combination: ["New Orleans", "Hamburger", "House"],
+        text: "Halloumi",
+        image: "ADD LINK",
+        alt: "Halloumi Cheese"
+    }
+];
+// need default answer due to not all combinations listed
+
 const unansweredQuestions = [];
 const chosenAnswers = [];
 
@@ -194,4 +223,11 @@ const handleClick = (questionId, chosenAnswer) => {
 const showAnswer= () => {
     const answerBlock = document.createElement('div');
     answerBlock.classList.add('result-block');
+
+    //add title to answer
+    const answerTitle = document.createElement('h3');
+    answerTitle.innerHTML = result.text;
+    //create image
+    const answerImage = document.createElement('img');
+    answerImage.setAttribute()
 }
