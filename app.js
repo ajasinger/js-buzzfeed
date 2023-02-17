@@ -106,10 +106,14 @@ const populateQuestions = () => {
         //Add header
         const titleHeading = document.createElement('h2');
         titleHeading.innerHTML = question.text;
-        titleBlock.append(titleHeading)
-
-
+        titleBlock.append(titleHeading);
         questionDisplay.append(titleBlock);
+
+        //Add answers
+        const questionsBlock = document.createElement('div');
+        questionsBlock.id = question.id + "-questions";
+        questionsBlock.classList.add('answer-options');
+
     })
 }
 
