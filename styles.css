@@ -71,3 +71,9 @@ p {
 .answer-block a {
     color: rgb(137, 137, 136);
 }
+
+.result-block {
+    width: 600px;
+    background-color: rgb(255, 61, 158);
+    border-radius: 5px;
+}
