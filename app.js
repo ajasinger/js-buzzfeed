@@ -142,6 +142,9 @@ const populateQuestions = () => {
 
             //Add image then title
             answerBlock.append(answerImage, answerTitle, answerInfo)
+
+            //Add answerBlock after answersBlock
+            answersBlock.append(answerBlock);
         })
 
         questionDisplay.append(answersBlock);
