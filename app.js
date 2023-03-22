@@ -153,6 +153,7 @@ const populateQuestions = () => {
         question.answers.forEach(answer => {
             const answerBlock = document.createElement('div');
             answerBlock.classList.add('answer-block');
+            //handleClick function defined below
             answerBlock.addEventListener('click', () => handleClick(question.id, answer.text));
 
             //Add image
@@ -188,8 +189,11 @@ const populateQuestions = () => {
     })
 }
 
+//call function
 populateQuestions();
 
+
+//define handleClick event
 const handleClick = (questionId, chosenAnswer) => {
     
     //add chosen answer to array only if it is included in unanswered questions
@@ -258,7 +262,7 @@ const showAnswer= () => {
     //disable multiple answer
     const allAnswerBlocks = document.querySelectorAll('.answer-block');
     //can't remove event listener to this is workaround
-    Array.from(allAnswerBlocks).foreEach(answerBlock => answerBlock.replaceWith(answerBlock.cloneNode(true)));
+    Array.from(allAnswerBlocks).forEach(answerBlock => answerBlock.replaceWith(answerBlock.cloneNode(true)));
 }
 
 const disableQuestionBlock = (questionId, chosenAnswer) => {
